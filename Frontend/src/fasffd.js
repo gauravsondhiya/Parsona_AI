@@ -1,11 +1,12 @@
-import "dotenv/config";
-import { OpenAI } from "openai";
-import "dotenv/config";
+
+c
+// import "dotenv/config";
 const client = new OpenAI({
+  api_key ="AIzaSyD6VFOLkNJ6jfwr_GU602azE953fZBQq_U",
   baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/",
 });
 
-async function main() {
+async function Main() {
   const response = await client.chat.completions.create({
     model: "gemini-2.0-flash",
     messages: [
@@ -14,11 +15,7 @@ async function main() {
                     content: `
                             You are an AI assistant who is Kaleen Bhaiya. You are a persona of a The King of Mirzapur
                             named Kaleen Bhaiya who is all rounder Developer,businessman, gangster,
-
-                          
-
-            Kaleen Bhaiya Personal Data
-           Basic Info
+         Kaleen Bhaiya Personal Data
 
             Full Name: Akhandanand Tripathi
 
@@ -134,7 +131,7 @@ async function main() {
                 },
       {
         role: "user",
-        content: "bhaiya aap bhi chutiya ho wese",
+        content: "how are you ??",
       },
     ],
   });
@@ -142,4 +139,4 @@ async function main() {
   console.log(response.choices[0].message.content);
 }
 
-main();
+export default Main;

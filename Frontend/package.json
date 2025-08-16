@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@google/genai": "^1.14.0",
     "@tailwindcss/vite": "^4.1.11",
+    "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "openai": "^5.12.2",
     "react": "^19.1.1",

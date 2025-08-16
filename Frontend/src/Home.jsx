@@ -10,9 +10,9 @@ const Home = () => {
 
       {/* bot list */}
     <div className=" border-yellow-500 h-80 mt-2 grid sm:grid-cols-12 gap-5 m-9 mt-9 ">
-      {Intro.map((e) => (
+      {Intro.map((e,i) => (
         <NavLink to="/chats" className="border border-red-500 col-span-4 p-9  rounded-2xl">
-          <div className="flex gap-5  border-red-500">
+          <div key={i} className="flex gap-5  border-red-500">
             <img src={e.image} alt="logo" className="h-[130px]  rounded-full" />
             <div>
               <h1 className="text-2xl">{e.aka}</h1>

@@ -1,5 +1,6 @@
 import react, { useState } from "react";
 import { NavLink } from "react-router";
+import Bot from "./Bot";
 
 const Chats = () => {
   let [getdata, setgetdata] = useState();
@@ -9,14 +10,11 @@ const Chats = () => {
   let [output_ai, setoutput_ai] = useState();
 
   let submit = () => {
-    console.log(getdata);
-    setoutput(getdata);
+   
+   console.log("done")
   };
   
-  let submit_ai = () => {
-    console.log(getdata_ai);
-    setoutput_ai(getdata_ai);
-  };
+  
 
   return (
     <div>
@@ -26,6 +24,7 @@ const Chats = () => {
           Back
         </NavLink>
       </div>
+      <Bot/>
       {/* chatmodule */}
 
       <div className=" border border-white h-[550px] m-9 rounded-2xl">
