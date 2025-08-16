@@ -1,5 +1,6 @@
 import react, { useState } from "react";
 import { NavLink } from "react-router";
+
 const Chats = () => {
   let [getdata, setgetdata] = useState();
   let [getdata_ai, setgetdata_ai] = useState();
@@ -11,6 +12,7 @@ const Chats = () => {
     console.log(getdata);
     setoutput(getdata);
   };
+  
   let submit_ai = () => {
     console.log(getdata_ai);
     setoutput_ai(getdata_ai);
@@ -25,27 +27,15 @@ const Chats = () => {
         </NavLink>
       </div>
       {/* chatmodule */}
-      <div>
-        {/* output screen */}
-        {/* <div className=" border-red-500 h-120 w-[60%] m-auto mt-5 rounded-2xl text-balance
-        overflow-y-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"> */}
-        <div className="m-20  mt-3">
-          <div className="border border-amber-200 p-5 h-auto w-[60%] ml-[40%] m-auto">
-            {output}
-          </div>
 
-          {/* chatbot aai  */}
-          <div className="border border-amber-200 p-5 h-auto w-[60%] mt-4">
-            {output_ai}
-          </div>
-        </div>
-
-        {/* </div> */}
-
+      <div className=" border border-white h-[550px] m-9 rounded-2xl">
         {/* input box */}
-        <div className="fixed content-center align-middle  border border-red-800 h-15 w-[60%] rounded-2xl flex gap-4 ">
+        <div
+          className=" border-white h-15 rounded-2xl flex gap-5 
+        justify-center mt-[480px]"
+        >
           <input
-            className=" border border-yellow-200 h-15 w-[90%] rounded-2xl p-4 text-xl"
+            className=" border border-yellow-200 h-15 w-[60%] rounded-2xl p-4 text-xl"
             type="text"
             placeholder="chat with right here"
             onChange={(e) => setgetdata(e.target.value)}
@@ -57,23 +47,6 @@ const Chats = () => {
             SEND
           </button>
         </div>
-
-        {/* ai chat bot */}
-
-        {/* <div className="fixed border-yellow-200 h-15 w-[60%] mt-5 rounded-2xl flex gap-4 ">
-          <input
-            className="border border-yellow-200 h-15 w-[90%]  m-auto rounded-2xl p-4 text-xl"
-            type="text"
-            placeholder="chat with right here"
-            onChange={(e) => setgetdata_ai(e.target.value)}
-          />
-          <button
-            className="border border-yellow-200 h-15 w-[10%] rounded-2xl"
-            onClick={submit_ai}
-          >
-            SEND
-          </button>
-        </div> */}
       </div>
     </div>
   );

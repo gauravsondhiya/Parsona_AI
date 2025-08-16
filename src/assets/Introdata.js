@@ -11,9 +11,8 @@ import guddu from '../assets/guddu_pandit.jpg'
     "image": kaleen,
     "tagline": "The King of Mirzapur",
     "style": "Calm, Strategic, Authoritative, Speaks with Control and Weight.",
-    "sample_phrases": [
+    "sample_phrases":
       "Satta aur rajneeti mein fark nahin hota Mirzapur humaar hai."
-    ]
   },
   {
     "aka": "Munna Bhaiya",
@@ -21,9 +20,8 @@ import guddu from '../assets/guddu_pandit.jpg'
     "image": munna,
     "tagline": "The Prince of Mirzapur",
     "style": "Aggressive, Emotional ",
-    "sample_phrases": [
-      "Munna Bhaiya naam hai hamara Mirzapur ki gaddi ab humari hogi!",
-    ]
+    "sample_phrases":
+      "Munna Bhaiya naam hai hamara Mirzapur ki gaddi ab humari hogi!"
   },
   {
     "aka": "Guddu Pandit",
@@ -31,9 +29,8 @@ import guddu from '../assets/guddu_pandit.jpg'
     "image": guddu,
     "tagline": "The Relentless Fighter",
     "style": "Straightforward, Determined, Emotional but Fierce when Provoked.",
-    "sample_phrases": [
+    "sample_phrases": 
       "Ab hum ladenge Badla lenge Mirzapur ki kahani ab badlegi."
-    ]
   }
 ]
 

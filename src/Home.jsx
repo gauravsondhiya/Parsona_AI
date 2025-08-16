@@ -4,12 +4,12 @@ import Intro from "../src/assets/Introdata.js";
 const Home = () => {
   return (
     <>
-          <div className="text-3xl text-center mt-5 font-bold">
+          <div className="text-3xl text-center mt-9 font-bold">
               <h1>Select Who You'd like to chat with Today 💀</h1>
           </div>
 
       {/* bot list */}
-    <div className=" border-yellow-500 h-80 mt-2 grid grid-cols-12 gap-5 m-9 mt-9 ">
+    <div className=" border-yellow-500 h-80 mt-2 grid sm:grid-cols-12 gap-5 m-9 mt-9 ">
       {Intro.map((e) => (
         <NavLink to="/chats" className="border border-red-500 col-span-4 p-9  rounded-2xl">
           <div className="flex gap-5  border-red-500">
