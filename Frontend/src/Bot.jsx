@@ -1,36 +1,20 @@
-import React, { useEffect, useState } from 'react'
-import { OpenAI } from "openai";
-// import "dotenv/config";
+import React from 'react'
+import { useEffect } from 'react'
+
 const Bot = () => {
-  let [input,setinput] = useState();
 
-  const callingapi = async()=>{
-  try {
-    const client = new OpenAI({
-      apiKey : import.meta.env.VITE_OPENAI_API_KEY,
-      baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/",
-    });
-
-    const response = await client.chat.completions.create({
-    model: "gemini-2.0-flash",
-      messages: [
-      {
-        role: 'system',
-        content: 'You are an AI assistant who is Anirudh.'
-        
-      },
-      { role:'user',content: 'Hey gpt, My name is Piyush Garg' },
-    ],
-  });
-   console.log(response.choices[0].message.content);
-  } catch (error) {
-    console.log(error)
-  }
-  }
-  useEffect(()=>{
-    callingapi()
-  })
-
+ let getdata = async ()=>{
+ 
+   let data = await fetch("http://localhost:3000/chat", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+   body: JSON.stringify({ messages: [{ role: "user", content: "Hello ji" }] }),
+});
+   
+ }
+useEffect(()=>{
+  getdata()
+})
   return (
     <div>Bot</div>
   )
