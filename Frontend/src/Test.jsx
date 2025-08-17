@@ -1,32 +1,38 @@
-import react, { useState } from 'react'
+import react, { useState } from "react";
+
+const Test = () => {
+  let [input, setinput] = useState({
+    inputchat:""
+  });
+  let [output, setoutput] = useState();
 
 
-const Test =()=>{
-    let [input,setinput] = useState();
-    let [output,setoutput] = useState()
-
-
-    let datafetch = async ()=>{
-        let response = await fetch("http://localhost:3000/chat",{
-            method:"POST",
-            headers:{"Content-Type":"application/json"},
-            body:JSON.stringify({'chat':input})
-        })
-    }
-
-    let submit=()=>{
-       
-        datafetch()
-        
-        console.log(input)
-    }
+  let handler =(e)=>{
+    let {name, value} = e.target
+    setinput((p)=>({
+        ...p,
+        [name]:value
+    }))
+  }
+  let submit = () => {
+    console.log(input.inputchat);
+    setinput({inputchat:" "})
+  };
 
   return (
-    <div>
-        <input type="text" onChange={(e)=>setinput(e.target.value)}/>
-        <button onClick={submit}>SUbmit</button>
+    <div className="flex gap-5">
+      <input
+        type="text"
+        className="border border-amber-300"
+        name="inputchat"
+        value ={input.inputchat}
+        onChange={handler}
+      />
+      <button className="border border-amber-300" onClick={submit}>
+        SUbmit
+      </button>
     </div>
-  )
-}
+  );
+};
 
 export default Test;
