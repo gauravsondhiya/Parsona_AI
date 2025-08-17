@@ -1,6 +1,6 @@
 
-import kaleen from '../assets/kaalin_bhaiya.avif'
-import munna from '../assets/munna_bhaiya.webp'
+import kaleen from '../assets/kaalin_bhaiya.jpg'
+import munna from '../assets/munna_bhaiya.jpg'
 import guddu from '../assets/guddu_pandit.jpg'
 
 

@@ -19,10 +19,6 @@ useEffect(()=>{
   // getdata()
 })
 
-  return (
-    <div>Bot</div>
-  )
- 
 
 }
 

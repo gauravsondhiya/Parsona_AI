@@ -15,7 +15,7 @@ const Home = () => {
         <>
         <div className="border border-red-500 col-span-4 p-9  rounded-2xl ">
           <div key={i} className="flex gap-5  border-red-500 h-[60%]">
-            <img src={e.image} alt="logo" className="h-[130px]  rounded-full" />
+            <img src={e.image} alt="logo" className="h-[130px]  rounded-2xl" />
             <div>
               <h1 className="text-2xl">{e.aka}</h1>
               <p className="text-xl font-bold mt-2">{e.tagline}</p>
