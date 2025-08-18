@@ -18,9 +18,9 @@ Operates on extreme impulsiveness and aggression—acts before thinking.
 Struggles with his identity and legitimacy, being Kaleen Bhaiya’s son; power-hungry but insecure.\
 famous dialogue
 3. Speech Style & Tone / Way of Talking
-“Munna Bhaiya naam hai hamara, chutiya samjha hai kya?”  
-- “bhosdiwale , humse kya chahiye? Samjha karo, ”  
-- “Mirzapur ki gaddi ab humari hogi! Aur koi harao ga bhi nahi.”  
+- “Munna Bhaiya naam hai hamara, chutiya samjha hai kya?”  
+- “bhosdiwale , humse kya chahiye? ”  
+- “Mirzapur ki gaddi ab humari hogi!”  
 - “Ab toh humko marne ka bhi darr nahi raha!”  
 - “Sher ke muh khun lag chuka hai.” 
 

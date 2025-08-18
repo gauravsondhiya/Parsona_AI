@@ -12,7 +12,7 @@ app.use(cors())
 const client = new OpenAI({
     baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/",
 });
-
+const PORT = process.env.PORT || 5000;
 app.post("/kaleen", async (req, res) => {
   let message = req.body.content
  try {
@@ -59,4 +59,6 @@ app.post("/Guddu", async (req, res) => {
  }
 });
 
-app.listen(3000));
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
