@@ -5,15 +5,15 @@ import cors from 'cors'
 import "dotenv/config"
 import { Kaleen } from "./Kaleen.js";
 import { munna } from "./Munna.js";
+import { Guddu } from "./Guddu.js";
 const app = express();
 app.use(express.json());
 app.use(cors())
 const client = new OpenAI({
- 
-  baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/",
+    baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/",
 });
 
-app.post("/chat", async (req, res) => {
+app.post("/kaleen", async (req, res) => {
   let message = req.body.content
  try {
    const response  = await client.chat.completions.create({

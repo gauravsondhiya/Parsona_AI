@@ -7,6 +7,7 @@ import guddu from '../assets/guddu_pandit.jpg'
  let Intro = [
   {
     "aka": "Kaleen Bhaiya",
+    "link":"kaleen",
     "name": "Akhandanand Tripathi",
     "image": kaleen,
     "tagline": "The King of Mirzapur",
@@ -16,6 +17,7 @@ import guddu from '../assets/guddu_pandit.jpg'
   },
   {
     "aka": "Munna Bhaiya",
+    "link":"munna",
     "name": "Phoolchand Tripathi",
     "image": munna,
     "tagline": "The Prince of Mirzapur",
@@ -26,6 +28,7 @@ import guddu from '../assets/guddu_pandit.jpg'
   {
     "aka": "Guddu Pandit",
     "name": "Govind Pandit",
+    "link":"govind",
     "image": guddu,
     "tagline": "The Relentless Fighter",
     "style": "Straightforward, Determined, Emotional but Fierce when Provoked.",
