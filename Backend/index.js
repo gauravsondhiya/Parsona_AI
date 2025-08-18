@@ -28,5 +28,35 @@ app.post("/kaleen", async (req, res) => {
    console.log(error)
  }
 });
+app.post("/munna", async (req, res) => {
+  let message = req.body.content
+ try {
+   const response  = await client.chat.completions.create({
+     model: "gemini-2.0-flash",
+    messages: [{  role: 'system',content: munna },
+               { role: 'user', content:message }]
+   });
+     console.log(response.choices[0].message.content);
+   res.json(response);
 
-app.listen(3000, () => console.log("Backend running on http://localhost:3000"));
+ } catch (error) {
+   console.log(error)
+ }
+});
+app.post("/Guddu", async (req, res) => {
+  let message = req.body.content
+ try {
+   const response  = await client.chat.completions.create({
+     model: "gemini-2.0-flash",
+    messages: [{  role: 'system',content: Guddu },
+               { role: 'user', content:message }]
+   });
+     console.log(response.choices[0].message.content);
+   res.json(response);
+
+ } catch (error) {
+   console.log(error)
+ }
+});
+
+app.listen(3000));
