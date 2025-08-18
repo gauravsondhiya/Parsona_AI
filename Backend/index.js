@@ -18,7 +18,7 @@ app.post("/chat", async (req, res) => {
  try {
    const response  = await client.chat.completions.create({
      model: "gemini-2.0-flash",
-    messages: [{  role: 'system',content: munna },
+    messages: [{  role: 'system',content: Kaleen },
                { role: 'user', content:message }]
    });
      console.log(response.choices[0].message.content);
